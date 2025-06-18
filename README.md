@@ -16,6 +16,9 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
    * `DoctorController.java` - Menangani operasi dokter dan janji temu
    * `PatientController.java` - Mengelola rekam medis pasien dan janji temu
 
+   📄 See full list → [Controller.md](https://github.com/calistasalsabila/Project/blob/main/MVP_projects.md)
+
+
 2. **Struktur Data** - Implementasi kustom
 
    * `LinkedList.java` - Implementasi linked list generik
@@ -23,6 +26,8 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
    * `ManualHashMap.java` - Implementasi hash map
    * `ManualQueue.java` - Implementasi antrian
    * `ManualPriorityQueue.java` - Implementasi antrian prioritas
+
+   📄 See full list → [MVP_projects.md](https://github.com/calistasalsabila/Project/blob/main/MVP_projects.md)
 
 3. **Model** - Entitas data
 
@@ -35,6 +40,31 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
    * `AdminMenu.java` - Interface administrator
    * `DokterMenu.java` - Interface dokter
    * `PatientMenu.java` - Interface pasien
+📄 See full list → [MVP_projects.md](https://github.com/calistasalsabila/Project/blob/main/MVP_projects.md)
+---
+
+## 🏗 Struktur Folder
+
+
+src/
+├── controller/
+│   ├── AdminController.java
+│   ├── PatientController.java
+│   └── DoctorController.java
+│   └── AnsiColor.java
+├── dataStructure/
+│   ├── LinkedList.java
+│   ├── Queue.java (PriorityQueue)
+│   └── BinarySearchTree.java
+├── model/
+│   ├── Appointment.java
+│   ├── Doctor.java
+│   └── Patient.java
+├── menu/
+│   ├── AdminMenu.java
+│   ├── DokterMenu.java
+│   └── PatientMenu.java
+└── Main.java
 
 ---
 
@@ -166,6 +196,16 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
 10. **Daisuke Clinic V9** - Calista (Penyempurnaan tampilan dan fungsionalitas)
 11. **Daisuke Clinic V10** - Zahra (README.md)   
  
-
 ---
 
+## 🚀 Cara Menjalankan
+
+1. Compile semua file Java di folder src
+2. Jalankan Main.java
+
+bash
+javac src/**/*.java
+java -cp src Main
+
+
+---
