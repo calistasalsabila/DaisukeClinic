@@ -171,22 +171,74 @@ This program is a comprehensive clinic management system implemented in Java and
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run the DaisukeClinic Project
 
-1. **Compile all Java files in the `src` folder** into the `bin` folder
-2. **Run `DaisukeClinic.java` from the `bin` folder**
+Follow the steps below to run the **DaisukeClinic** Java project on your local machine.
 
-### 💻 Compile (Windows PowerShell)
+---
+
+### 🔁 1. Clone the Repository
+
+Use the following command to clone the project from GitHub:
+
+```bash
+git clone https://github.com/calistasalsabila/DaisukeClinic.git
+```
+
+This will create a new folder named `DaisukeClinic` containing all the source code.
+
+---
+
+### 📁 2. Navigate to Project Directory
+
+```bash
+cd DaisukeClinic
+```
+
+Make sure the folder contains the following structure:
+
+```
+DaisukeClinic/
+├── src/            # Source files
+├── bin/            # Compiled classes (will be generated)
+├── README.md
+└── ...
+```
+
+---
+
+### 💻 3. Compile Java Files (Windows PowerShell)
+
+Compile all `.java` files from the `src` folder into the `bin` folder:
 
 ```powershell
 javac -d bin -cp src $(Get-ChildItem -Recurse -Filter *.java -Path src | ForEach-Object { $_.FullName })
 ```
 
-### ▶️ Run
+> 💡 Make sure `bin` folder exists or create it using `mkdir bin` if needed.
+
+---
+
+### ▶️ 4. Run the Program
+
+Run the main class `DaisukeClinic` from the `bin` folder:
 
 ```bash
 java -cp bin DaisukeClinic
 ```
+
+You should now see the menu interface for the DaisukeClinic system.
+
+---
+
+### ✅ Done!
+
+The system should now be running and ready to interact with. You can explore features for:
+
+* Admin management
+* Doctor and patient data
+* Appointment scheduling
+
 
 ---
 
