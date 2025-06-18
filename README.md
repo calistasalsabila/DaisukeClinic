@@ -50,8 +50,6 @@ This program is a comprehensive clinic management system implemented in Java and
 
 ### 📋 Admin Features
 
-![Admin Menu](images/Admin_menu.png)
-
 * Add/remove doctors and patients
 * View all doctors and patients
 * Search patients by ID or name
@@ -59,16 +57,12 @@ This program is a comprehensive clinic management system implemented in Java and
 
 ### 👨‍⚕️ Doctor Features
 
-![Doctor Menu](images/Doctor_menu.png)
-
 * Login/logout system
 * View currently logged-in doctors
 * Process appointments
 * Add diagnosis, treatment plans, and prescriptions
 
 ### 🧑‍⚕️ Patient Features
-
-![Patient Menu](images/Patient_menu.png)
 
 * Patient registration
 * Create appointment
@@ -130,6 +124,8 @@ This program is a comprehensive clinic management system implemented in Java and
 * Doctor processes queue by specialization
 * Add diagnosis, plan, prescription
 * Save to patient medical records
+
+📄 more details → [AlurClinic.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Menu.md)
 
 ---
 
