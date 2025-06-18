@@ -178,12 +178,27 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
 
 ## 🚀 Cara Menjalankan
 
-1. Compile semua file Java di folder src
-2. Jalankan Main.java
+1. **Compile semua file Java di folder `src`** ke dalam folder `bin`
+2. **Jalankan `DaisukeClinic.java` dari folder `bin`**
 
-bash
-javac src/**/*.java
-java -cp src Main
+### 💻 Compile (Windows PowerShell)
+
+```powershell
+javac -d bin -cp src $(Get-ChildItem -Recurse -Filter *.java -Path src | ForEach-Object { $_.FullName })
+```
+
+### ▶️ Run
+
+```bash
+java -cp bin DaisukeClinic
+```
+
+---
+
+### 📝 Catatan:
+
+* `-d bin`: output `.class` ke folder `bin`
+* `-cp bin`: menjalankan class dari folder `bin` 
 
 
 ---
