@@ -43,31 +43,6 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
 📄 See full list → [MVP_projects.md](https://github.com/calistasalsabila/Project/blob/main/MVP_projects.md)
 ---
 
-## 🏗 Struktur Folder
-
-
-src/
-├── controller/
-│   ├── AdminController.java
-│   ├── PatientController.java
-│   └── DoctorController.java
-│   └── AnsiColor.java
-├── dataStructure/
-│   ├── LinkedList.java
-│   ├── Queue.java (PriorityQueue)
-│   └── BinarySearchTree.java
-├── model/
-│   ├── Appointment.java
-│   ├── Doctor.java
-│   └── Patient.java
-├── menu/
-│   ├── AdminMenu.java
-│   ├── DokterMenu.java
-│   └── PatientMenu.java
-└── Main.java
-
----
-
 ## 🎯 Fitur Utama
 
 ### 📋 Fitur Admin atau Administrator
