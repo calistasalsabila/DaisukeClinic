@@ -8,7 +8,7 @@ This documentation outlines the main steps involved in using the **Daisuke Clini
 
 Users are presented with a main menu consisting of options for Admin, Doctor, and Patient.
 
-![Main Menu Display](images/main_menu.png)
+![Main Menu Display](assets/images/images/main_menu.png)
 
 ---
 
