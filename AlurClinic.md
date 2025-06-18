@@ -16,8 +16,8 @@ Users are presented with a main menu consisting of options for Admin, Doctor, an
 
 Doctors can log in by entering their ID. The system will record the login time and display the doctor's information.
 
-![Doctor Login](images/login_doctor1.png)
-![Registration Doctor](images/Registration_doctor.png)
+![Doctor Login](assets/images/login_doctor1.png)
+![Registration Doctor](assets/images/Registration_doctor.png)
 ![Doctor Login](images/login_doctor2.png)
 ![View Logged-in Doctors](images/logged_in_doctors.png)
 
