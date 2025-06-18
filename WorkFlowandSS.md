@@ -26,7 +26,7 @@ Doctors can log in by entering their ID. The system will record the login time a
 
 New patients can register by providing their ID, name, age, address, and phone number. After completing the registration, they can proceed to make an appointment and view the upcoming appointments.
 
-![Patient Registration](assets/images/patient_registration.png)
+![Patient Registration](assets/images/patient_registatration.png)
 ![Create an Appointment](assets/images/patient_create_aappointment.png)
 ![View the Upcoming Appointments](assets/images/upcoming_appointments.png)
 
