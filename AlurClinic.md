@@ -18,17 +18,17 @@ Doctors can log in by entering their ID. The system will record the login time a
 
 ![Doctor Login](assets/images/login_doctor1.png)
 ![Registration Doctor](assets/images/Registration_doctor.png)
-![Doctor Login](images/login_doctor2.png)
-![View Logged-in Doctors](images/logged_in_doctors.png)
+![Doctor Login](assets/images/login_doctor2.png)
+![View Logged-in Doctors](assets/images/logged_in_doctors.png)
 
 ---
 ## 3. 👥 Patient Registration
 
 New patients can register by providing their ID, name, age, address, and phone number. After completing the registration, they can proceed to make an appointment and view the upcoming appointments.
 
-![Patient Registration](images/patient_registration.png)
-![Create an Appointment](images/patient_create_aappointment.png)
-![View the Upcoming Appointments](images/upcoming_appointments.png)
+![Patient Registration](assets/images/patient_registration.png)
+![Create an Appointment](assets/images/patient_create_aappointment.png)
+![View the Upcoming Appointments](assets/images/upcoming_appointments.png)
 
 ---
 
@@ -36,9 +36,9 @@ New patients can register by providing their ID, name, age, address, and phone n
 
 After selecting an appointment, doctors can fill in the diagnosis, treatment plan, and prescriptions.
 
-![Processing Appointment](images/process_appoinment.png)
-![Before Diagnosis](images/show_diagnosis1.png)
-![After Diagnosis](images/show_diagnosis2.png)
+![Processing Appointment](assets/images/process_appoinment.png)
+![Before Diagnosis](assets/images/show_diagnosis1.png)
+![After Diagnosis](assets/images/show_diagnosis2.png)
 
 ---
 
@@ -46,7 +46,7 @@ After selecting an appointment, doctors can fill in the diagnosis, treatment pla
 
 Doctors can log out of the system after completing their tasks. The system will record and update the doctor's status.
 
-![Doctor Logout](images/logout_doctor.png)
+![Doctor Logout](assets/images/logout_doctor.png)
 
 ---
 
@@ -54,18 +54,18 @@ Doctors can log out of the system after completing their tasks. The system will 
 
 Admins can access features to add/remove doctors and patients, as well as view/search doctor and patient data.
 
-![Add Doctor](images/admin_add_doctor.png)
-![Remove Doctor](images/admin_remove_doctor.png)
-![Add Patient](images/admin_add_patient.png)
-![Remove Patient](images/admin_remove_patient.png)
+![Add Doctor](assets/images/admin_add_doctor.png)
+![Remove Doctor](assets/images/admin_remove_doctor.png)
+![Add Patient](assets/images/admin_add_patient.png)
+![Remove Patient](assets/images/admin_remove_patient.png)
 
 ---
 
 ## 7. 📝 Show Doctors and Patients
 Admins can view comprehensive details for each doctor, including ID, name, specialization, and current status. Patient information such as ID, name, age, address, and contact details is also accessible for review and management.
 
-![Show Doctors](images/show_doctor.png)
-![Show Patients](images/patient_lists.png)
+![Show Doctors](assets/images/show_doctor.png)
+![Show Patients](assets/images/patient_lists.png)
 
 ---
 
@@ -73,8 +73,8 @@ Admins can view comprehensive details for each doctor, including ID, name, speci
 
 Admins can search for patients by ID or name for quick access to patient records.
 
-![Search Patient by ID](images/search_ID.png)
-![Search Patient by Name](images/search_name.png)
+![Search Patient by ID](assets/images/search_ID.png)
+![Search Patient by Name](assets/images/search_name.png)
 
 ---
 
@@ -82,6 +82,6 @@ Admins can search for patients by ID or name for quick access to patient records
 
 After completing their activities, users can log out from the system.
 
-![Logout](images/exit_program.png)
+![Logout](assets/images/exit_program.png)
 
 ---
