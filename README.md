@@ -125,7 +125,7 @@ This program is a comprehensive clinic management system implemented in Java and
 * Add diagnosis, plan, prescription
 * Save to patient medical records
 
-📄 more details and screenshots → [WorkFlowandSS.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/WorkFlow.md)
+📄 more details and screenshots → [WorkFlowandSS.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/WorkFlowandSS.md)
 
 ---
 
