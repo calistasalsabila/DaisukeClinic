@@ -114,9 +114,4 @@ Struktur data ini memperlihatkan kemampuan implementasi dasar struktur data pent
 * Menyesuaikan struktur data sesuai kebutuhan aplikasi.
 * Meningkatkan kontrol terhadap performa dan logika penyimpanan.
 
-> 📌 **Saran Pengembangan**:
->
-> * Tambahkan unit test (JUnit) untuk setiap class.
-> * Gunakan generik lebih luas untuk fleksibilitas.
-> * Kembangkan `ManualHashMap` agar mendukung rehashing dan dynamic resizing.
-> * Tambahkan balancing (AVL/Red-Black Tree) ke `PatientBST`.
+

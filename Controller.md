@@ -100,8 +100,3 @@ Folder `controller/` adalah jembatan utama antara pengguna (user) dan data dalam
 
 ---
 
-> 📌 **Rekomendasi ke depan**:
->
-> * Terapkan validasi input agar lebih aman.
-> * Pisahkan logika tampilan dan logika bisnis ke helper/helper view.
-> * Implementasi exception handling lebih dalam untuk error yang lebih spesifik dan user-friendly.
