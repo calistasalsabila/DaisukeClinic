@@ -163,7 +163,9 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
 7. **Daisuke Clinic V6** - Zahra, Andra (Validasi PatientController dan UI output)
 8. **Daisuke Clinic V7** - Calista, Zuljuhdi (Validasi ID dan pembetulan sistem appointment)
 9. **Daisuke Clinic V8** - Zahra (Penambahan UI, plan, prescription)
-10. **Daisuke Clinic V9** (Final) - Calista (Penyempurnaan tampilan dan fungsionalitas)
+10. **Daisuke Clinic V9** - Calista (Penyempurnaan tampilan dan fungsionalitas)
+11. **Daisuke Clinic V10** - Zahra (README.md)   
+ 
 
 ---
 
