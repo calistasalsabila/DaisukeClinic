@@ -1,70 +1,69 @@
 # 📁 Folder: `Model/`
 
-
-Dokumentasi ini menjelaskan tiga file penting yang berfungsi sebagai representasi data utama dalam sistem manajemen klinik. Ketiga file ini digunakan untuk menyimpan dan mengelola informasi yang berkaitan dengan pasien, dokter, dan janji temu (appointment).
-
----
-
-## 🧑 Patient.java
-
-### 📌 Deskripsi
-
-File ini berisi kelas Patient yang digunakan untuk merepresentasikan entitas pasien dalam sistem.
-
-### 🔍 Properti Utama:
-
-* id: ID unik untuk setiap pasien
-* name: Nama lengkap pasien
-* age: Umur pasien
-* gender: Jenis kelamin
-* medicalHistory: Riwayat medis pasien
-
-### 🧱 Struktur:
-
-* Constructor untuk inisialisasi data
-* Getter dan Setter untuk setiap field
-* Override toString() untuk menampilkan informasi pasien secara ringkas
+This documentation explains three essential files that function as the primary data representations in the clinic management system. These files store and manage information related to patients, doctors, and appointments.
 
 ---
 
-## 🩺 Doctor.java
+## 🧑 `Patient.java`
 
-### 📌 Deskripsi
+### 📌 Description
 
-Kelas Doctor merepresentasikan dokter dalam sistem, termasuk informasi dasar dan spesialisasinya.
+This file contains the `Patient` class, which is used to represent the patient entity in the system.
 
-### 🔍 Properti Utama:
+### 🔍 Key Properties:
 
-* id: ID dokter
-* name: Nama dokter
-* specialization: Spesialisasi medis (misalnya, umum, gigi, dll)
+* `id`: Unique ID for each patient
+* `name`: Full name of the patient
+* `age`: Age of the patient
+* `gender`: Gender of the patient
+* `medicalHistory`: Medical history of the patient
 
-### 🧱 Struktur:
+### 🧱 Structure:
 
-* Constructor untuk pembuatan objek dokter
-* Getter dan Setter untuk semua atribut
-* Override toString() untuk menampilkan informasi dokter
+* Constructor for data initialization
+* Getters and setters for each field
+* Overridden `toString()` method to display patient information concisely
 
 ---
 
-## 📅 Appointment.java
+## 🩺 `Doctor.java`
 
-### 📌 Deskripsi
+### 📌 Description
 
-Kelas ini merepresentasikan janji temu (appointment) antara pasien dan dokter pada waktu tertentu.
+The `Doctor` class represents doctors in the system, including basic information and specialization.
 
-### 🔍 Properti Utama:
+### 🔍 Key Properties:
 
-* appointmentId: ID unik janji temu
-* patient: Objek Patient terkait
-* doctor: Objek Doctor terkait
-* appointmentDate: Tanggal dan waktu janji temu
-* notes: Catatan tambahan dari dokter
+* `id`: Doctor's ID
+* `name`: Doctor's name
+* `specialization`: Medical specialization (e.g., general, dental, etc.)
 
-### 🧱 Struktur:
+### 🧱 Structure:
 
-* Constructor lengkap
-* Getter dan Setter untuk setiap atribut
-* Override toString() untuk ringkasan janji temu
+* Constructor for creating doctor objects
+* Getters and setters for all attributes
+* Overridden `toString()` method to display doctor information
+
+---
+
+## 🗕️ `Appointment.java`
+
+### 📌 Description
+
+This class represents an appointment between a patient and a doctor at a specific date and time.
+
+### 🔍 Key Properties:
+
+* `appointmentId`: Unique ID for the appointment
+* `patient`: Associated `Patient` object
+* `doctor`: Associated `Doctor` object
+* `appointmentDate`: Date and time of the appointment
+* `notes`: Additional notes from the doctor
+
+### 🧱 Structure:
+
+* Full constructor
+* Getters and setters for each attribute
+* Overridden `toString()` for appointment summary
 
 ---

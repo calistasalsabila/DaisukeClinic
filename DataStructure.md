@@ -1,117 +1,116 @@
 # 📁 Folder: `dataStructure/`
 
-
-Folder ini menjelaskan struktur data buatan sendiri (custom) yang digunakan dalam proyek berbasis Java, termasuk `LinkedList`, `ManualHashMap`, `ManualPriorityQueue`, `Map`, dan `PatientBST`.
+This folder describes custom data structures used in the Java-based project, including `LinkedList`, `ManualHashMap`, `ManualPriorityQueue`, `Map`, and `PatientBST`.
 
 ---
 
 ## 🔗 `LinkedList.java`
 
-### 🎯 Tujuan:
+### 🌟 Purpose:
 
-Membuat implementasi dasar struktur data **Linked List** satu arah.
+Implements a basic **singly linked list** data structure.
 
-### 📦 Komponen:
+### 📦 Components:
 
-* `Node<T>` → kelas dalam (inner class) untuk menyimpan data dan pointer ke node berikutnya.
-* `add(T data)` → menambah data ke akhir list.
-* `remove(T data)` → menghapus data dari list.
-* `contains(T data)` → mengecek apakah data ada.
-* `printList()` → menampilkan semua elemen.
+* `Node<T>` → inner class to store data and a pointer to the next node.
+* `add(T data)` → adds data to the end of the list.
+* `remove(T data)` → removes data from the list.
+* `contains(T data)` → checks if the list contains the data.
+* `printList()` → displays all elements.
 
-### 🔧 Karakteristik:
+### 🔧 Characteristics:
 
-* Generik (`<T>`) → fleksibel untuk semua tipe data.
-* Pendekatan manual untuk pengelolaan memori via pointer `next`.
-
----
-
-## 🗺️ `ManualHashMap.java`
-
-### 🎯 Tujuan:
-
-Membuat implementasi sederhana struktur data **HashMap** tanpa menggunakan koleksi bawaan Java.
-
-### 📦 Komponen:
-
-* `Entry<K, V>` → inner class menyimpan pasangan key-value.
-* `put(K key, V value)` → menambahkan atau mengupdate data.
-* `get(K key)` → mengambil value berdasarkan key.
-* `remove(K key)` → menghapus pasangan berdasarkan key.
-* `hash(K key)` → fungsi hash sederhana.
-
-### 🔧 Karakteristik:
-
-* Menggunakan array dari `LinkedList<Entry<K, V>>` sebagai bucket.
-* Ukuran tetap (default 10), bisa dikembangkan menjadi dinamis.
+* Generic (`<T>`) → flexible for any data type.
+* Manual memory management using the `next` pointer.
 
 ---
 
-## 🏗️ `ManualPriorityQueue.java`
+## 🗜️ `ManualHashMap.java`
 
-### 🎯 Tujuan:
+### 🌟 Purpose:
 
-Implementasi antrian prioritas (**Priority Queue**) manual berbasis array list.
+Creates a simple implementation of the **HashMap** data structure without using Java's built-in collections.
 
-### 📦 Komponen:
+### 📦 Components:
 
-* `add(E element, int priority)` → memasukkan elemen sesuai prioritas.
-* `poll()` → mengambil elemen dengan prioritas tertinggi.
-* `peek()` → melihat elemen tertinggi tanpa menghapus.
+* `Entry<K, V>` → inner class storing key-value pairs.
+* `put(K key, V value)` → adds or updates data.
+* `get(K key)` → retrieves a value by key.
+* `remove(K key)` → deletes a pair by key.
+* `hash(K key)` → simple hash function.
 
-### 🔧 Karakteristik:
+### 🔧 Characteristics:
 
-* Disusun berdasarkan nilai prioritas (semakin kecil, semakin tinggi).
-* Penyimpanan menggunakan list/array manual.
+* Uses an array of `LinkedList<Entry<K, V>>` as buckets.
+* Fixed size (default 10), but can be extended to dynamic sizing.
+
+---
+
+## 🏧 `ManualPriorityQueue.java`
+
+### 🌟 Purpose:
+
+Manual implementation of a **priority queue** using an array list.
+
+### 📦 Components:
+
+* `add(E element, int priority)` → inserts element according to priority.
+* `poll()` → retrieves the highest priority element.
+* `peek()` → views the highest priority element without removing it.
+
+### 🔧 Characteristics:
+
+* Ordered by priority value (smaller value = higher priority).
+* Storage uses a manual list/array.
 
 ---
 
 ## 🗂️ `Map.java`
 
-### 🎯 Tujuan:
+### 🌟 Purpose:
 
-Interface sederhana untuk custom Map agar bisa diimplementasikan oleh `ManualHashMap`.
+A simple interface for a custom Map, to be implemented by `ManualHashMap`.
 
-### 📦 Method:
+### 📦 Methods:
 
 * `put(K key, V value)`
 * `get(K key)`
 * `remove(K key)`
 
-### 🔧 Karakteristik:
+### 🔧 Characteristics:
 
-* Tidak menggunakan library eksternal.
-* Menjaga prinsip interface-oriented design.
+* Does not use external libraries.
+* Emphasizes interface-oriented design.
 
 ---
 
 ## 🌳 `PatientBST.java`
 
-### 🎯 Tujuan:
+### 🌟 Purpose:
 
-Struktur data pohon biner pencarian (**Binary Search Tree**) untuk menyimpan data pasien berdasarkan ID.
+Binary Search Tree (**BST**) structure to store patient data by ID.
 
-### 📦 Komponen:
+### 📦 Components:
 
-* `Node` → menyimpan objek pasien dan pointer kiri & kanan.
-* `insert(Patient patient)` → memasukkan pasien ke tree.
-* `search(String id)` → mencari pasien berdasarkan ID.
-* `inOrderTraversal()` → menampilkan data secara terurut.
-* `delete(String id)` → menghapus pasien berdasarkan ID.
+* `Node` → stores patient objects and left & right pointers.
+* `insert(Patient patient)` → inserts a patient into the tree.
+* `search(String id)` → finds a patient by ID.
+* `inOrderTraversal()` → displays data in sorted order.
+* `delete(String id)` → deletes a patient by ID.
 
-### 🔧 Karakteristik:
+### 🔧 Characteristics:
 
-* Setiap pasien diurutkan berdasar ID.
-* Efisien untuk pencarian data besar.
+* Patients are sorted by ID.
+* Efficient for large-scale data searches.
 
 ---
 
-## 📚 Kesimpulan
+## 📚 Conclusion
 
-Struktur data ini memperlihatkan kemampuan implementasi dasar struktur data penting tanpa menggunakan library built-in. Ini sangat berguna untuk belajar:
+These data structures demonstrate the ability to implement core data structures from scratch without using built-in libraries. This is highly beneficial for learning:
 
-* Cara kerja internal struktur data.
-* Menyesuaikan struktur data sesuai kebutuhan aplikasi.
-* Meningkatkan kontrol terhadap performa dan logika penyimpanan.
+* How data structures work internally.
+* Customizing data structures to fit application needs.
+* Gaining better control over performance and storage logic.
 
-
+---

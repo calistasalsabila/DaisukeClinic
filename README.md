@@ -1,157 +1,157 @@
-# 🏥 Dokumentasi Sistem Manajemen Clinic Daisuke
+# 🏥 Daisuke Clinic Management System Documentation
 
-## 📌 Gambaran Umum
+## 📌 Overview
 
-Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan dalam Java dan menggunakan berbagai struktur data. Sistem ini mengelola dokter, pasien, dan janji temu dengan berbagai fungsionalitas untuk administrator, dokter, dan pasien.
-
----
-
-## 🧱 Arsitektur Sistem
-
-### Komponen Utama
-
-1. **Controller** - Menangani logika
-
-   * `AdminController.java` - Mengelola dokter dan pasien
-   * `DoctorController.java` - Menangani operasi dokter dan janji temu
-   * `PatientController.java` - Mengelola rekam medis pasien dan janji temu
-
-   📄 lebih lengkap → [Controller.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Controller.md)
-
-
-2. **Struktur Data** - Implementasi kustom
-
-   * `LinkedList.java` - Implementasi linked list generik
-   * `PatientBST.java` - Binary Search Tree untuk rekam medis pasien
-   * `ManualHashMap.java` - Implementasi hash map
-   * `ManualQueue.java` - Implementasi antrian
-   * `ManualPriorityQueue.java` - Implementasi antrian prioritas
-
-   📄 lebih lengkap → [DataStructure.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/DataStructure.md)
-
-3. **Model** - Entitas data
-
-   * `Doctor.java` - Informasi dokter
-   * `Patient.java` - Informasi pasien
-   * `Appointment.java` - Detail janji temu
-
-   📄 lebih lengkap →  [Model.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Model.md)
-
-4. **Menu** - Interface pengguna
-
-   * `AdminMenu.java` - Interface administrator
-   * `DokterMenu.java` - Interface dokter
-   * `PatientMenu.java` - Interface pasien
-
-   📄 lebih lengkap → [Menu.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Menu.md)
----
-
-## 🎯 Fitur Utama
-
-### 📋 Fitur Admin atau Administrator
-
-![Menu Admin](images/Admin_menu.png)
-
-* Menambah/menghapus dokter dan pasien
-* Melihat semua dokter dan pasien
-* Mencari pasien berdasarkan ID atau nama
-* Menampilkan rekam medis pasien dalam urutan BST
-
-### 👨‍⚕️ Fitur Dokter
-
-![Menu Dokter](images/Doctor_menu.png)
-
-* Sistem login/logout
-* Melihat dokter yang sedang login
-* Memproses janji temu
-* Menambahkan diagnosis, rencana perawatan, dan resep
-
-### 🧑‍⚕️ Fitur Pasien
-
-![Menu Pasien](images/Patient_menu.png)
-
-* Pendaftaran pasien
-* Pembuatan janji temu
-* Melihat janji temu yang akan datang
-* Melihat diagnosis, rencana penanganan, dan resep
+This program is a comprehensive clinic management system implemented in Java and utilizes various data structures. The system manages doctors, patients, and appointments with multiple functionalities for administrators, doctors, and patients.
 
 ---
 
-## 🧠 Implementasi Struktur Data
+## 🧱 System Architecture
+
+### Main Components
+
+1. **Controller** - Handles logic
+
+   * `AdminController.java` - Manages doctors and patients
+   * `DoctorController.java` - Handles doctor operations and appointments
+   * `PatientController.java` - Manages patient medical records and appointments
+
+   📄 more details → [Controller.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Controller.md)
+
+2. **Data Structure** - Custom implementations
+
+   * `LinkedList.java` - Generic linked list implementation
+   * `PatientBST.java` - Binary Search Tree for patient medical records
+   * `ManualHashMap.java` - Hash map implementation
+   * `ManualQueue.java` - Queue implementation
+   * `ManualPriorityQueue.java` - Priority queue implementation
+
+   📄 more details → [DataStructure.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/DataStructure.md)
+
+3. **Model** - Data entities
+
+   * `Doctor.java` - Doctor information
+   * `Patient.java` - Patient information
+   * `Appointment.java` - Appointment details
+
+   📄 more details → [Model.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Model.md)
+
+4. **Menu** - User interface
+
+   * `AdminMenu.java` - Administrator interface
+   * `DokterMenu.java` - Doctor interface
+   * `PatientMenu.java` - Patient interface
+
+   📄 more details → [Menu.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Menu.md)
+
+---
+
+## 🌟 Main Features
+
+### 📋 Admin Features
+
+![Admin Menu](images/Admin_menu.png)
+
+* Add/remove doctors and patients
+* View all doctors and patients
+* Search patients by ID or name
+* Display patient medical records in BST order
+
+### 👨‍⚕️ Doctor Features
+
+![Doctor Menu](images/Doctor_menu.png)
+
+* Login/logout system
+* View currently logged-in doctors
+* Process appointments
+* Add diagnosis, treatment plans, and prescriptions
+
+### 🧑‍⚕️ Patient Features
+
+![Patient Menu](images/Patient_menu.png)
+
+* Patient registration
+* Create appointment
+* View upcoming appointments
+* View diagnosis, treatment plans, and prescriptions
+
+---
+
+## 🧠 Data Structure Implementation
 
 ### 1. `LinkedList.java`
 
-* Implementasi linked list generik
-* Mendukung operasi add, remove, contains, dan get
-* Mengimplementasikan Iterable untuk dukungan foreach
+* Generic linked list implementation
+* Supports add, remove, contains, and get operations
+* Implements Iterable for foreach support
 
 ### 2. `PatientBST.java`
 
-* Binary Search Tree untuk rekam medis pasien
-* Menggunakan ID pasien sebagai kunci
-* Operasi insert, search, delete, dan inOrder display
+* Binary Search Tree for patient medical records
+* Uses patient ID as key
+* Supports insert, search, delete, and in-order display
 
 ### 3. `ManualHashMap.java`
 
-* Implementasi hash map dengan chaining
-* Kapasitas default 16, menggunakan linked list untuk kolisi
+* Hash map implementation with chaining
+* Default capacity 16, uses linked list for collisions
 
 ### 4. `ManualQueue.java`
 
-* Implementasi antrian sederhana
-* Mendukung enqueue, dequeue, peek, isEmpty, isFull
+* Simple queue implementation
+* Supports enqueue, dequeue, peek, isEmpty, isFull
 
 ---
 
-## 🔄 Alur Kerja Utama
+## 🔄 Main Workflows
 
-### 1. Registrasi Dokter
+### 1. Doctor Registration
 
-* Input data: ID, nama, spesialis
-* Validasi input, simpan ke sistem
+* Input data: ID, name, specialization
+* Validate input, save to system
 
-### 2. Login Dokter
+### 2. Doctor Login
 
-* Input ID, validasi, rekam waktu login
+* Input ID, validate, record login time
 
-### 3. Pendaftaran Pasien
+### 3. Patient Registration
 
-* Input data pribadi, validasi
-* Simpan ke LinkedList dan BST
+* Input personal data, validate
+* Save to LinkedList and BST
 
-### 4. Pembuatan Janji Temu
+### 4. Appointment Creation
 
-* Pilih spesialisasi dan dokter
-* Pilih waktu, sistem cek ketersediaan
-* Tambahkan ke antrian spesialisasi
+* Choose specialization and doctor
+* Select time, system checks availability
+* Add to specialization queue
 
-### 5. Proses Janji Temu oleh Dokter
+### 5. Appointment Processing by Doctor
 
-* Dokter memproses antrian sesuai spesialisasi
-* Tambah diagnosis, plan, resep
-* Simpan ke rekam medis pasien
-
----
-
-## ⭐ Keunggulan Sistem
-
-* Penggunaan banyak struktur data (BST, Queue, HashMap, LinkedList)
-* Pemisahan tanggung jawab antara controller, model, dan menu
-* Validasi input dan tampilan antarmuka yang rapi
-* Cocok untuk pengembangan sistem klinik skala kecil hingga menengah
+* Doctor processes queue by specialization
+* Add diagnosis, plan, prescription
+* Save to patient medical records
 
 ---
 
-## ⚙️ Catatan Implementasi
+## ⭐ System Advantages
 
-* `PatientBST` menggunakan ID sebagai kunci, pencarian O(log n)
-* Spesialisasi dokter dikelola dengan ManualHashMap
-* `Appointment` menggunakan `Comparable` untuk pengurutan
-* Waktu login dokter dicatat untuk pelaporan
+* Utilizes multiple data structures (BST, Queue, HashMap, LinkedList)
+* Separation of concerns among controller, model, and menu
+* Input validation and clean interface
+* Suitable for small to medium-scale clinic system development
 
 ---
 
-## 👥 Anggota Kelompok
+## ⚙️ Implementation Notes
+
+* `PatientBST` uses ID as key, O(log n) search
+* Doctor specializations managed with ManualHashMap
+* `Appointment` uses `Comparable` for sorting
+* Doctor login time recorded for reporting
+
+---
+
+## 👥 Team Members
 
 1. Zuljuhdi Nurnubli - L0124083
 2. Az Zahra Sam Putri - L0124089
@@ -160,26 +160,25 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
 
 ---
 
-## 🛠️ Tahap Pengembangan
+## 💠 Development Stages
 
-1. **Daisuke Clinic V0** - Calista, Zuljuhdi, Zahra, Andra (Dasar program: Patient - Calista, Doctor - Andra, Appointment - Zahra, BST - Zuljuhdi)
-2. **Daisuke Clinic V1** - Calista (Pemecahan Menu controller, perapian struktur)
-3. **Daisuke Clinic V2** - Calista (Penambahan Appointment)
-4. **Daisuke Clinic V3** - Calista, Zuljuhdi (Validasi pada Appointment)
-5. **Daisuke Clinic V4** - Zahra (Perubahan bahasa sistem)
-6. **Daisuke Clinic V5** - Zuljuhdi (Validasi dan perpindahan menu diagnosis)
-7. **Daisuke Clinic V6** - Zahra, Andra (Validasi PatientController dan UI output)
-8. **Daisuke Clinic V7** - Calista, Zuljuhdi (Validasi ID dan pembetulan sistem appointment)
-9. **Daisuke Clinic V8** - Zahra (Penambahan UI, plan, prescription)
-10. **Daisuke Clinic V9** - Calista (Penyempurnaan tampilan dan fungsionalitas)
-11. **Daisuke Clinic V10** - Zahra Calista (README.md)   
- 
+1. **Daisuke Clinic V0** - Calista, Zuljuhdi, Zahra, Andra (Program base: Patient - Calista, Doctor - Andra, Appointment - Zahra, BST - Zuljuhdi)
+2. **Daisuke Clinic V1** - Calista (Separation into controller, menu, dataStructure, model folders and main creation)
+3. **Daisuke Clinic V2** - Calista, Zuljuhdi (Validation on Appointment)
+4. **Daisuke Clinic V3** - Zahra (System language change)
+5. **Daisuke Clinic V4** - Zuljuhdi (Validation and diagnosis menu migration)
+6. **Daisuke Clinic V5** - Zahra, Andra (Validation on PatientController and UI output)
+7. **Daisuke Clinic V6** - Calista, Zuljuhdi (ID validation and appointment system fix)
+8. **Daisuke Clinic V7** - Zahra (UI addition, plan, prescription)
+9. **Daisuke Clinic V8** - Calista (UI and functionality refinement)
+10. **Daisuke Clinic V9** - Zahra, Calista (README.md)
+
 ---
 
-## 🚀 Cara Menjalankan
+## 🚀 How to Run
 
-1. **Compile semua file Java di folder `src`** ke dalam folder `bin`
-2. **Jalankan `DaisukeClinic.java` dari folder `bin`**
+1. **Compile all Java files in the `src` folder** into the `bin` folder
+2. **Run `DaisukeClinic.java` from the `bin` folder**
 
 ### 💻 Compile (Windows PowerShell)
 
@@ -195,10 +194,7 @@ java -cp bin DaisukeClinic
 
 ---
 
-### 📝 Catatan:
+### 📝 Notes:
 
-* `-d bin`: output `.class` ke folder `bin`
-* `-cp bin`: menjalankan class dari folder `bin` 
-
-
----
+* `-d bin`: outputs `.class` files to the `bin` folder
+* `-cp bin`: runs classes from the `bin` folder

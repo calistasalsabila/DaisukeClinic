@@ -1,102 +1,83 @@
 # 📁 Folder: `controller/`
 
-Folder `controller/` dalam arsitektur berbasis MVC (Model-View-Controller) bertugas menangani logika yang mengatur komunikasi antara tampilan (view) dan data (model). Di proyek ini, folder `controller/` berisi tiga file utama:
+The `controller/` folder in an MVC (Model-View-Controller) based architecture handles the logic that manages communication between the view and the data (model). In this project, the `controller/` folder contains three main files:
 
 * `AdminController.java`
 * `DoctorController.java`
 * `PatientController.java`
 
-File `AnsiColor.java` juga termasuk sebagai utilitas tambahan untuk memperindah tampilan log output dengan warna.
+The file `AnsiColor.java` is also included as an additional utility to enhance the appearance of log output using colors.
 
 ---
 
 ## 📄 `AdminController.java`
 
-### 🧠 Tujuan:
+### 🧠 Purpose:
 
-Mengatur seluruh fitur CRUD (Create, Read, Update, Delete) serta manajemen data untuk entitas "Admin" dalam aplikasi.
+Manages all CRUD (Create, Read, Update, Delete) features and data management for the "Admin" entity in the application.
 
-### 🔍 Penjelasan:
+### 🔍 Explanation:
 
-* Menyediakan fungsionalitas seperti login, menampilkan data admin, dan edit data admin.
-* Terhubung dengan `AdminModel` sebagai sumber data.
-* Menggunakan metode `Scanner` untuk interaksi user via CLI.
-* Output diformat dengan `AnsiColor` untuk mempermudah pembacaan.
+* Provides functionalities such as login, displaying admin data, and editing admin data.
+* Connected to `AdminModel` as the data source.
+* Uses the `Scanner` method for user interaction via CLI.
+* Output is formatted using `AnsiColor` for easier readability.
 
-### ⚙️ Fitur-fitur Utama:
 
-* `loginAdmin()` → login menggunakan username & password.
-* `menuAdmin()` → menampilkan menu utama khusus admin.
-* `lihatDataDokter()`, `lihatDataPasien()` → menampilkan data dari entitas lain.
-* `hapusDataDokter()`, `hapusDataPasien()` → hapus data berdasarkan ID.
+### 📌 Notes:
 
-### 📌 Catatan:
-
-Menggunakan banyak switch-case sebagai navigasi menu.
+Uses multiple switch-case statements for menu navigation.
 
 ---
 
 ## 📄 `DoctorController.java`
 
-### 🧠 Tujuan:
+### 🧠 Purpose:
 
-Mengelola interaksi user dengan sistem pada bagian dokter. Fungsinya seperti login, menampilkan profil, dan input diagnosis.
+Manages user interaction with the system for doctors. Functions include login, profile display, and inputting diagnoses.
 
-### 🔍 Penjelasan:
+### 🔍 Explanation:
 
-* Interaksi berbasis teks via CLI.
-* Dokter login berdasarkan ID dan nama.
-* Diagnosis pasien diinput oleh dokter melalui menu khusus.
+* Text-based interaction via CLI.
+* Doctors log in using their ID and name.
+* Diagnoses are input by the doctor through a special menu.
 
-### ⚙️ Fitur-fitur Utama:
 
-* `loginDokter()` → login dokter.
-* `menuDokter()` → menu setelah login.
-* `tambahDiagnosis()` → dokter bisa memasukkan diagnosis pasien berdasarkan ID pasien.
+### 📌 Notes:
 
-### 📌 Catatan:
-
-Terkoneksi dengan model pasien dan diagnosis.
+Connected to the patient and diagnosis models.
 
 ---
 
 ## 📄 `PatientController.java`
 
-### 🧠 Tujuan:
+### 🧠 Purpose:
 
-Mengatur interaksi user (pasien) seperti login, melihat data pribadi, serta diagnosis yang telah diberikan dokter.
+Manages user (patient) interaction such as login, viewing personal data, and viewing diagnoses given by the doctor.
 
-### 🔍 Penjelasan:
+### 🔍 Explanation:
 
-* Login menggunakan ID dan nama pasien.
-* Menampilkan hasil diagnosis yang telah dimasukkan oleh dokter.
-
-### ⚙️ Fitur-fitur Utama:
-
-* `loginPasien()` → login pasien.
-* `menuPasien()` → menu utama setelah login.
-* `lihatDataPribadi()` → melihat informasi pasien.
-* `lihatDiagnosis()` → melihat daftar diagnosis.
+* Login using patient ID and name.
+* Displays diagnosis results entered by the doctor.
 
 ---
 
 ## 🛠️ `AnsiColor.java`
 
-### 🎯 Tujuan:
+### 🌟 Purpose:
 
-Utilitas untuk menambahkan warna pada teks CLI menggunakan ANSI escape codes. Ini meningkatkan keterbacaan saat menampilkan teks berwarna-warni di terminal.
+Utility for adding color to CLI text using ANSI escape codes. This improves readability when displaying colored text in the terminal.
 
-### 💡 Contoh penggunaan:
+### 💡 Example usage:
 
 ```java
-System.out.println(AnsiColor.ANSI_GREEN + "Login Berhasil!" + AnsiColor.ANSI_RESET);
+System.out.println(AnsiColor.ANSI_GREEN + "Login Successful!" + AnsiColor.ANSI_RESET);
 ```
 
 ---
 
-## 📚 Kesimpulan
+## 📚 Conclusion
 
-Folder `controller/` adalah jembatan utama antara pengguna (user) dan data dalam sistem. Dengan pendekatan CLI (Command Line Interface), sistem ini cukup modular dan mudah dikembangkan. Penggunaan `AnsiColor` juga menunjukkan perhatian pada aspek user experience walau hanya berbasis terminal.
+The `controller/` folder is the main bridge between the user and the data in the system. With a CLI (Command Line Interface) approach, this system is fairly modular and easy to develop. The use of `AnsiColor` also shows attention to the user experience aspect, even though it is terminal-based.
 
 ---
-
