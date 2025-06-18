@@ -16,7 +16,7 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
    * `DoctorController.java` - Menangani operasi dokter dan janji temu
    * `PatientController.java` - Mengelola rekam medis pasien dan janji temu
 
-   📄 See full list → [Controller.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Controller.md)
+   📄 lebih lengkap → [Controller.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Controller.md)
 
 
 2. **Struktur Data** - Implementasi kustom
@@ -27,7 +27,7 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
    * `ManualQueue.java` - Implementasi antrian
    * `ManualPriorityQueue.java` - Implementasi antrian prioritas
 
-   📄 See full list → [DataStructure.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/DataStructure.md)
+   📄 lebih lengkap → [DataStructure.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/DataStructure.md)
 
 3. **Model** - Entitas data
 
@@ -35,14 +35,15 @@ Program ini adalah sistem manajemen klinik komprehensif yang diimplementasikan d
    * `Patient.java` - Informasi pasien
    * `Appointment.java` - Detail janji temu
 
-   📄 [Model.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Model.md)
+   📄 lebih lengkap →  [Model.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Model.md)
 
 4. **Menu** - Interface pengguna
 
    * `AdminMenu.java` - Interface administrator
    * `DokterMenu.java` - Interface dokter
    * `PatientMenu.java` - Interface pasien
-   📄 See full list → [Menu.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Menu.md)
+
+   📄 lebih lengkap → [Menu.md](https://github.com/calistasalsabila/DaisukeClinic/blob/main/Menu.md)
 ---
 
 ## 🎯 Fitur Utama
