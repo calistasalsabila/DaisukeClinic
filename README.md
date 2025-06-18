@@ -163,7 +163,7 @@ This program is a comprehensive clinic management system implemented in Java and
 ## 💠 Development Stages
 
 1. **Daisuke Clinic V0** - Calista, Zuljuhdi, Zahra, Andra (Program base: Patient - Calista, Doctor - Andra, Appointment - Zahra, BST - Zuljuhdi)
-2. **Daisuke Clinic V1** - Calista (Separation into controller, menu, dataStructure, model folders and main creation)
+2. **Daisuke Clinic V1** - Calista (Separation into controller, menu, dataStructure, and model folders)
 3. **Daisuke Clinic V2** - Calista, Zuljuhdi (Validation on Appointment)
 4. **Daisuke Clinic V3** - Zahra (System language change)
 5. **Daisuke Clinic V4** - Zuljuhdi (Validation and diagnosis menu migration)
